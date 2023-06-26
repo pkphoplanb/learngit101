@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const express = require('express')
 const morgan = require('morgan')
 const cors = require('cors')
@@ -18,6 +20,6 @@ readdirSync('./routes').map((e) => {
     app.use('/api', require('./routes/' + e)) 
 })
 
-app.listen(5000, () => {
+app.listen(PROCESS.ENV.PORT, () => {
     console.log('Server is Running on port 5000')
 })
