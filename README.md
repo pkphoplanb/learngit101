@@ -1,2 +1,3 @@
-# learngit101
+# Learngit101
 Learn Git Work
+- git init, push, pull, clone
